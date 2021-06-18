@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="441.0" layoutY="34.0" mnemonicParsing="false" onAction="#backtoMenu" text="Back to menu" />
+      <Label layoutX="57.0" layoutY="20.0" text="Current Billboards">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="billboards" layoutX="-1.0" layoutY="100.0" prefHeight="305.0" prefWidth="600.0" style="-fx-background-color: purple;">
+        <columns>
+          <TableColumn fx:id="Colheight" prefWidth="125.0" text="Height" />
+          <TableColumn fx:id="Colbroad" prefWidth="152.0" text="Broad" />
+            <TableColumn fx:id="Coluse" prefWidth="147.0" text="is this use?" />
+            <TableColumn fx:id="Colbrand" prefWidth="173.0" text="Brand" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

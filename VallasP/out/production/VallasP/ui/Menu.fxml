@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="148.0" layoutY="28.0" text="Welcome to the application" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="66.0" text="Main menu">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="364.0" layoutY="138.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="91.0" text="Menu" textAlignment="CENTER">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#screen2" text="Add billboard" />
+          <MenuItem mnemonicParsing="false" onAction="#screen3" text="Display billboards" />
+            <MenuItem mnemonicParsing="false" onAction="#importBillboard" text="Import billboards" />
+            <MenuItem mnemonicParsing="false" onAction="#exportData" text="Export hazard report" />
+            <MenuItem mnemonicParsing="false" onAction="#leave" text="Leave" />
+        </items>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </MenuButton>
+      <ImageView fx:id="MainImage" fitHeight="244.0" fitWidth="276.0" layoutX="43.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../giphy.gif" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.15" contrast="0.05" saturation="-0.02" />
+   </effect>
+</Pane>
